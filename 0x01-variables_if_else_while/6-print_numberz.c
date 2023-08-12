@@ -1,4 +1,4 @@
-#include <stdioh>
+#include <stdio.h>
 /*print number*/
 int main(void)
 {
