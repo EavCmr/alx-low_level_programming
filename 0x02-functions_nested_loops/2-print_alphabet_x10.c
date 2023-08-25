@@ -1,23 +1,25 @@
-#include <stdio.h>
-/**Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
- *Prototype: void print_alphabet_x10(void);
- *You can only use _putchar twice in your code
- */
-#include <unistd.h>
-void print_alphabet_x10(void) 
-{
-    char letter = 'a';
-    int i;
+#include "main.h"
 
-    for (i = 0; i < 10; i++) 
-    {
-        while (letter <= 'z') 
+/**
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
+ */
+void print_alphabet_x10(void)
+{
+	char ch;
+	int i;
+
+	i = 0;
+
+	while (i < 10)
 	{
-            putchar(letter);
-            letter++;
-        }
-        letter = 'a';
-	putchar('\n');
-    }
-    putchar('\n');
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }

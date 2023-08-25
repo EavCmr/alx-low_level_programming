@@ -1,18 +1,21 @@
-#include <stdio.h>
-#include <unistd.h>
-/**Write a function that prints the alphabet, in lowercase, followed by a new line.
- *Prototype: void print_alphabet(void);
- *You can only use _putchar twice in your code
+#include "main.h"
+
+/**
+ * print_alphabet - Entry point
+ * Return:0
  */
+
 void print_alphabet(void)
 {
-    char c;
+	char c = 'a';
 
-    for (c = 'a'; c <= 'z'; c++)
-    {
-        putchar(c);
-    }
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
 
-    putchar('\n');
+	}
+	_putchar('\n');
+
 }
 
